@@ -27,7 +27,7 @@ void main()
       if(j==5)
       {
        cnt--;
-       //printf("\nremaining %d",cnt);
+       printf("\nremaining %d",cnt);
       }
       if(f==3)
       {
