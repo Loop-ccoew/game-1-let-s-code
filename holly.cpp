@@ -35,7 +35,7 @@ void main()
       }
     }
   }
-  if(count==l-disp)    //ifguessedletters=total letters-displayedletters
+  if(count==||<=l-disp)    //ifguessedletters=total letters-displayedletters
   {cout<<"YOU WIN";
   }
   else
