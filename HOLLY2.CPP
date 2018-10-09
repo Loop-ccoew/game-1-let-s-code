@@ -18,8 +18,7 @@ void main()
 	{
 	  b[x]=str[x];
 	  cout<<str[x]<<"\t";
-
-	}
+        }
        else
 	{
 	  if(str[x]=='/')
@@ -52,17 +51,14 @@ void main()
 	}
       cout<<endl;
       if(q==0)
-
-      {cout<<endl;
+      {
+       cout<<endl;
        cout<<"you win"<<endl;
        cout<<"The movie is  ";
        for(y=0;y<l;y++)
-       {
-       if(y[x]=='/')
         {
-         y
-       cout<<str[y];
-       }
+          cout<<str[y];
+        }
 	 i=1000;
        }
      }
