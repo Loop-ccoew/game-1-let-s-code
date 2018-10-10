@@ -1,0 +1,152 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i=9;
+    char G;
+    char a;
+    char b;
+    printf("\n - - E / - U -");
+    do
+    {
+        printf("\n Enter your guess:");
+        scanf("%c",&G);
+        if(G=='T'&& a==0 && b==0)
+        {
+            printf("\nT - E / - U -");
+            a = 'T';
+        }
+        else
+        {
+            if(a=='T'&& G=='H' && b==0)
+            {
+                printf("\nT H E / - U  -");
+                b = 'H';
+            }
+            else
+            {
+                if(a=='T' && b=='H' && G=='N' )
+                {
+                    printf("\nT H E / N U N");
+                    printf("\nYay !You Solved It!");
+                }
+                else
+                {
+                    if(a=='T' && G=='N' && b==0)
+                    {
+                        printf("\n T - E / N U N");
+                        b= 'N';
+                    }
+                    else
+                    {
+                        if(a=='T' && b=='N' && G=='H')
+                        {
+                             printf("\nT H E / N U N");
+                             printf("\nYay !You Solved It!");
+                        }
+                        else
+                        {
+                            if(G=='N' && a==0 && b==0)
+                            {
+                                printf("\n_ _ E / N U N");
+                                a='N';
+                            }
+                            else
+                            {
+                                if(a=='N' && G=='T'&& b==0)
+                                {
+                                    printf("\nT _ E / N U N");
+                                    b='T';
+                                }
+                                else
+                                {
+                                    if(a=='N'&& b=='T'&& G=='H')
+                                    {
+                                        printf("\nT H E / N U N");
+                                        printf("\nYay !You Solved It!");
+                                    }
+                                    else
+                                    {
+                                        if(a=='N' && G=='H'&& b==0)
+                                        {
+                                            printf("\n- H E / N U N");
+                                            b = 'H';
+                                        }
+                                        else
+                                        {
+                                            if(a=='N' && b=='H' && G=='T')
+                                            {
+                                                printf("\nT H E / N U N");
+                                                printf("\nYay !You Solved It!");
+                                            }
+                                            else
+                                            {
+                                                if(G=='H' && a==0 && b==0)
+                                                {
+                                                    printf("\n - H E / - U -");
+                                                    a = 'H';
+                                                }
+                                                else
+                                                {
+                                                    if(a=='H' && G=='T' && b==0)
+                                                    {
+                                                        printf("\nT H E / - U -");
+                                                        b ='T';
+                                                    }
+                                                    else
+                                                    {
+                                                        if(a=='H'&& b=='T' && G=='N')
+                                                        {
+                                                            printf("\nT H E / N U N");
+                                                            printf("\nYay !You Solved It!");
+                                                        }
+                                                        else
+                                                        {
+                                                            if(a=='H' && G=='N' && b==0)
+                                                            {
+                                                                printf("\n- H E / N U N");
+                                                                b = 'N';
+                                                            }
+                                                            else
+                                                            {
+                                                                if(a=='H' && b=='N' && G=='T')
+                                                                {
+                                                                    printf("\nT H E / N U N");
+                                                                    printf("\nYay !You Solved It!");
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+        i = i - 1 ;
+
+
+
+
+    }while(i!=0 || ((a!='N' && b!='T' && G!='H')||(a!='N'&& b!='H' && G!='T')||(a!='T' && b!='H' && G!='N')||(a!='T' && b!='N' && G!='H')|| (a!='H' && b!='N' && G!='T')||(a!='H' && b!='T' && G!='N')));
+
+    if(i==0)
+    {
+        printf("\nYOU LOST.BETTER LUCK NEXT TIME!");
+        printf("The movie was : THE NUN");
+    }
+    else
+    {
+        printf("\nCONGRATULATIONS!");
+    }
+    return 0;
+}
